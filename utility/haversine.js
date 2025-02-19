@@ -16,8 +16,8 @@ class Haversine_Formular {
   
       // difference between lat and lon
   
-      const difLat = lat_1_radian - lat_2_radian;
-      const difLon = lon_1_radian - lon_2_radian;
+      const difLat = lat_2_radian - lat_1_radian;
+      const difLon = lon_2_radian - lon_1_radian;
   
       const a =
         Math.sin(difLat / 2) ** 2 +
@@ -33,4 +33,4 @@ class Haversine_Formular {
     };
   }
   
-  export default Haversine;
+  export default Haversine_Formular;
